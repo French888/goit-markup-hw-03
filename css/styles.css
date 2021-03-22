@@ -113,6 +113,10 @@ padding-left: 0px;
   margin-top: 30px;
 }
 
+.section{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 /* Header*/
 
 .header{
@@ -205,30 +209,17 @@ padding-left: 0px;
  margin-left: 30px;   
 }
 
-.section-skill{
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.section-work{
-  padding-bottom: 94px;
-}
-
-.section-team{
-  padding-top: 94px;
-}
 /* Button section */
 .section-portfolio .menu-portfolio{
   display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  margin-bottom: 58px;
- 
+  justify-content: center;  
 }
 
 .menu-portfolio-item:not(:first-child){
   margin-left: 8px;
-
+}
+.navigation-portfolio{
+  margin-bottom: 56px;
 }
 
 .work-item{
@@ -333,10 +324,6 @@ letter-spacing: 0.06em;
 color:var(--title-color);
 
 }
-.section{
-  padding-bottom: 94px;
-}
-
 
 .dark-bg{
   background-color: var(--dark-bg-color); 
