@@ -208,6 +208,9 @@ padding-left: 0px;
 .skill-item:not(:first-child){
  margin-left: 30px;   
 }
+.section-pad{
+  padding-top: 0;
+}
 
 /* Button section */
 .section-portfolio .menu-portfolio{
