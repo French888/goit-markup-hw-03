@@ -34,8 +34,10 @@ html{
   --grit-item: 1;
 }
 
-body {  
+body {
+  margin: 0;  
   font-family: 'Roboto', sans-serif;
+  font-style: normal;
   font-size: 16px;
   line-height: 1.88;
   color:var(--main-text-color);
@@ -47,13 +49,17 @@ img{
   height: auto;
   }
 
+ ul{
+   list-style: none;
+   padding: 0;
+   margin: 0;
+ } 
+
 h1,
 h2,
 h3,
-p,
-ul{
-  margin-top: 0;
-  margin-bottom: 0;
+p{
+  margin: 0;
 }
 
 .address{
@@ -120,7 +126,7 @@ padding-left: 0px;
 /* Header*/
 
 .header{
-  border: 1px solid rgba(236, 236, 236, 0.5);
+  border-bottom: 1px solid rgba(236, 236, 236, 0.5);
 }
 .header .container{
   display: flex;
@@ -183,7 +189,9 @@ padding-left: 0px;
 /* Hero section */
 
 .hero{
-  min-height: 100vh;
+ padding-top: 200px;
+ padding-bottom: 200px;
+
   display: flex;
   align-items: center; 
 }
@@ -204,6 +212,8 @@ padding-left: 0px;
   flex-direction: row;
   justify-content: center;
 }
+
+
 
 .skill-item:not(:first-child){
  margin-left: 30px;   
@@ -226,10 +236,12 @@ padding-left: 0px;
 }
 
 .work-item{
+  width: 370px;
   --grid-item: 3;
 }
 
 .team-item{
+  width: 270px;
   --grid-item: 4;
 }
 .button-portfolio{
@@ -280,13 +292,16 @@ margin-bottom: 30px;
 }
 
 .title-webstudio{
+margin: 0 auto;
+
+color: var(--title-color);
 font-weight: 700;
 font-size: 14px;
 line-height: 1,14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-color: var(--title-color);
-margin: 0 auto;
+
+
 }
 
 .section-title-webstudio{
@@ -301,7 +316,8 @@ margin: 0 auto;
 
 .title-webstudio-work{
  padding-top: 30px;
- padding-bottom: 10px; 
+ 
+
 font-weight:500;
 font-size: 16px;
 line-height: 1.18;
@@ -310,6 +326,7 @@ color:var(--title-color);
 margin: 0 auto;
 }
 .title-work{
+  margin-top: 10px;
   padding-bottom: 30px;
 }
 .team-bg-card{
@@ -320,11 +337,13 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .section-title-portfolio{
+  margin-bottom: 4px;
+
+color:var(--title-color);
 font-weight: 700; 
 font-size: 18px;
 line-height: 2.0;
 letter-spacing: 0.06em;
-color:var(--title-color);
 
 }
 
@@ -341,8 +360,13 @@ color:var(--title-color);
   --grid-item:9;
 
 }
-.ourwork-bg-card{
+.border-item{
   width: 370px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
   background: var(--page-title-color);
   border: 1px solid rgba(238, 238, 238, 0.5);
   box-sizing: border-box;
@@ -350,12 +374,14 @@ color:var(--title-color);
 .address{
   display: flex;
   flex-direction: column;
+  padding-bottom: 60px;
+  
+  color:var(--mail-tel-color);
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color:var(--mail-tel-color);
-  padding-bottom: 60px;
+  
   
 }
 
