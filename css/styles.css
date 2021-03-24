@@ -31,16 +31,18 @@ html{
   --page-title-color:#FFFFFF;
   --mail-tel-color: rgba(255, 255, 255, 0.6);
   --logo-font:Raleway, sans-serit;
-  --grit-item: 1;
+  
 }
 
 body {
-  margin: 0;  
+  margin: 0;
+  
+  color:var(--main-text-color);
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 1.88;
-  color:var(--main-text-color);
+  
   }
 
 img{
@@ -104,19 +106,6 @@ padding-left: 0px;
   padding: 0 15px;
   margin:0 auto; 
   /*background: yellow;*/
-}
-
-.grid{
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
-} 
-
-.grid-item{
-  flex-basis: calc((100%-30px*var(--grit-item))/var(--grit-item));
-  margin-left: 30px;
-  margin-top: 30px;
 }
 
 .section{
@@ -192,40 +181,29 @@ padding-left: 0px;
  padding-top: 200px;
  padding-bottom: 200px;
 
-  display: flex;
-  align-items: center; 
 }
 
-.hero-content{
-  /*width: calc (100%/12*6);*/
+.hero .hero-content{
   max-width: 700px; 
-}
-.hero .container{
-  display:flex;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 /* Skill section */
 
 .skill-list{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  
+}
+.skill-item{
+  width: 270px;
+  margin-right:  30px;
 }
 
-
-
-.skill-item:not(:first-child){
- margin-left: 30px;   
+.skill-item:last-child{
+ margin-right: 0;   
 }
 .section-pad{
   padding-top: 0;
-}
-
-/* Button section */
-.section-portfolio .menu-portfolio{
-  display: flex;
-  justify-content: center;  
 }
 
 .menu-portfolio-item:not(:first-child){
@@ -235,15 +213,62 @@ padding-left: 0px;
   margin-bottom: 56px;
 }
 
+/* Work section */
+
+.work-list{
+  display: flex;
+}
+
 .work-item{
   width: 370px;
-  --grid-item: 3;
+  margin-right: 30px;
+}
+
+.work-item:last-child{
+  margin-right: 0;
+}
+
+/* Team section */
+
+.team-list{
+  display: flex;
 }
 
 .team-item{
-  width: 270px;
-  --grid-item: 4;
+width: 270px;
+margin-right: 30px;
 }
+
+.team-item:last-child{
+  margin-right: 0;
+}
+
+.section .grid{
+  padding: 0;
+
+}
+
+
+/* Button section */
+
+.section .menu-portfolio{
+  display: flex;
+  justify-content: center;  
+}
+
+.grid{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+} 
+
+.grid-item{
+  width: 370px;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
 .button-portfolio{
   padding: 6px 22px;
  
@@ -356,18 +381,16 @@ letter-spacing: 0.06em;
   background-color: var(--grey-bg-color);
   padding-bottom: 94px;
  }
-.ourwork{
-  --grid-item:9;
 
-}
-.border-item{
+
+.grid-item .border-item {
   width: 370px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
 
-  background: var(--page-title-color);
+  background-color: var(--page-title-color);
   border: 1px solid rgba(238, 238, 238, 0.5);
   box-sizing: border-box;
 }
@@ -380,9 +403,7 @@ letter-spacing: 0.06em;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  
-  
+  letter-spacing: 0.03em; 
 }
 
 .location{
