@@ -409,10 +409,14 @@ letter-spacing: 0.06em;
 .location{
 color: var(--page-title-color);
 }
-.footer-logo{
+.section-footer{
   padding-top: 60px;
+}
+
+.link-logo{
   margin-bottom: 20px;
 }
+
 .link-footer{
   margin-bottom: 9px;
 }
